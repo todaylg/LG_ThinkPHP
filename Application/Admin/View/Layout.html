@@ -1,99 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <title>{$title}</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="stylesheet" type="text/css" href="">
-        <script type="text/javascript" src=""></script>
-        <script src="__PUBLIC__/js/CWJS/DefaultJs.js" language="JavaScript"></script>   <!--1-->  
-        <script>
-            function A(){
-                location.href = "__MODULE__/Home/LoginOff";//localtion.href   4
-            };
-            function B(){
-                location.href = "__MODULE__/ChangePassword/ChangePassword";
-            };
-        </script>   
+	<title>{$title}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<Link rel="ICON" href="__ROOT__/LG_small.png">
+	<script src="__PUBLIC__/js/CWJS/DefaultJs.js" language="JavaScript"></script> 
+	
+	<script>
+		function LoginOff(){
+			location.href = "__MODULE__/Home/LoginOff";
+		};
+		function ChangePassword(){
+			location.href = "__MODULE__/Personinfo/ChangePassword";
+		};
+	</script>   
 </head>
 <body>
-<div class="header">
-<div class="headerleft">
-    <img src="/DriverSchool/Application/Public/js/Layout/img/ds.png" style="height:54px;margin-top:2px;" alt="驾校管理系统" />
-</div>
-<div class="headerright" id="exit" onclick="A()" title="退出">
-    <span></span>
-</div>
-<div class="headerright" id="CP" onclick="B()" title="仅限工作人员和管理员">
-密码修改
-</div>
-<div class="headerright" title="真实姓名">
-<?php echo session('UserRealName');?>       <!--5.session + php echo-->
-</div>
-<div class="headerright" title="驾校名称">
-<?php echo cookie('DriverSchoolName');?>    <!--6.cookie + php echo-->
-</div>
-</div>
-<div class="background">
-<!--nav-->
-<div class="nav"> 　
-	<!--导航条-->
-	<ul class="nav-main">
-		<li id="li-1">预约管理<span></span></li>
-		<li id="li-2">用户管理<span></span></li>
-		<li id="li-3">反馈查询<span></span></li>
-		<li id="li-4">消息发布<span></span></li>
-		<li id="li-5">基础信息管理<span></span></li>
-                <li id="li-6">驾校管理<span></span></li>
-	</ul>
-	<!--隐藏盒子-->
-	<div id="box-1" class="hidden-box hidden-loc-index">
-		<ul>
-			<li><a href='__MODULE__/AppointManage/Audit'>审核</a></li>
-                        <li><a href='__MODULE__/AppointManage/ManageCoach'>可预约管理</a></li>
-		</ul>
+	<div class="header">
+		<div class="headerleft">
+			<img src="/LG_ThinkPHP/Application/Public/js/Layout/img/logo.png" style="height:54px;margin-top:2px;" alt="XXX管理系统" />
+		</div>
+		<div class="headerright" id="exit" onclick="LoginOff()" title="退出">
+			<span></span>
+		</div>
+		<div class="headerright" id="CP" onclick="ChangePassword()" title="仅限工作人员和管理员">
+			密码修改
+		</div>
+		<div class="headerright" title="角色">
+			<?php echo '角色：'; echo "管理员";?>       
+		</div>
+		<div class="headerright" title="当前用户">
+			<?php echo "当前用户："; echo session('UserName');?>    <!--6.cookie + php echo-->
+		</div>
 	</div>
-	<div id="box-2" class="hidden-box hidden-loc-us">
-		<ul>
-		        <li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
-                        <li><a href='__MODULE__/UserManage/AdminManage'>管理员信息管理</a></li>
-		</ul>
+	<div class="background">
+		<div class="nav"> 　
+			<div class="easyui-accordion" data-options="multiple:true" style="width:300px;height1:300px;">
+				<div title="用户信息管理" style="overflow:auto;padding:10px;">
+					<ul>
+					<li><a href="__MODULE__/UserManage/AddUser">添加用户</a></li>
+						<li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
+					<li><a href='__MODULE__/UserManage/CommonUserInfo'>常用成员信息</a></li>
+					</ul>
+				</div>
+				<div title="用户信息管理" style="overflow:auto;padding:10px;">
+					<ul>
+					<li><a href="__MODULE__/UserManage/AddUser">添加用户</a></li>
+						<li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
+					<li><a href='__MODULE__/UserManage/CommonUserInfo'>常用成员信息</a></li>
+					</ul>
+				</div>
+				<div title="用户信息管理" style="overflow:auto;padding:10px;">
+					<ul>
+					<li><a href="__MODULE__/UserManage/AddUser">添加用户</a></li>
+						<li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
+					<li><a href='__MODULE__/UserManage/CommonUserInfo'>常用成员信息</a></li>
+					</ul>
+				</div>
+				<div title="用户信息管理" style="overflow:auto;padding:10px;">
+					<ul>
+					<li><a href="__MODULE__/UserManage/AddUser">添加用户</a></li>
+						<li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
+					<li><a href='__MODULE__/UserManage/CommonUserInfo'>常用成员信息</a></li>
+					</ul>
+				</div>
+				<div title="用户信息管理" style="overflow:auto;padding:10px;">
+					<ul>
+					<li><a href="__MODULE__/UserManage/AddUser">添加用户</a></li>
+						<li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
+					<li><a href='__MODULE__/UserManage/CommonUserInfo'>常用成员信息</a></li>
+					</ul>
+				</div>
+				<div title="用户信息管理" style="overflow:auto;padding:10px;">
+					<ul>
+					<li><a href="__MODULE__/UserManage/AddUser">添加用户</a></li>
+						<li><a href='__MODULE__/UserManage/UserManage'>用户管理</a></li>
+					<li><a href='__MODULE__/UserManage/CommonUserInfo'>常用成员信息</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">          
+			<div class="content">
+				<div style="">
+					<div><h1>{$tip0}</h1></div><br />
+					<div><h2>{$tip}：</h2></div><br />
+							{__CONTENT__}
+				</div>
+			</div>
+		</div>
+		<div class="footer">Powered By ChinaWit  © 2016-2016  京ICP备00000000号</div>
 	</div>
-	<div id="box-3" class="hidden-box hidden-loc-info">
-		<ul>
-			<li><a href='__MODULE__/FeedBackManage/CheckStatement'>总评价查看</a></li>
-                        <li><a href='__MODULE__/FeedBackManage/DeleteFeedBack'>删除评价</a></li>          
-		</ul>
-	</div>
-        <div id="box-4" class="hidden-box box04">
-		<ul>
-			<li><a href='__MODULE__/MessageManage/searchMsg'>消息查询</a></li>
-                        <li><a href='__MODULE__/MessageManage/sendByStaff'>内部人员消息发布</a></li>
-                        <li><a href='__MODULE__/MessageManage/sendByStudent'>学员信息发布</a></li>
-		</ul>
-	</div>
-	<div id="box-5" class="hidden-box box05">
-		<ul>
-			<li><a href='__MODULE__/InfrastructureManage/StudentManage'>学员信息管理</a></li>
-                        <li><a href='__MODULE__/InfrastructureManage/CoachManage'>教练信息管理</a></li>
-                        <li><a href='__MODULE__/InfrastructureManage/StaffManage'>工作人员信息管理</a></li>
-                        <li><a href='__MODULE__/InfrastructureManage/ClassManage'>班期管理</a></li>
-		</ul>
-	</div>
-        <div id="box-6" class="hidden-box box06">
-		<ul>
-			<li><a href='__MODULE__/DriverSchoolManage/DriverSchoolManage'>驾校管理</a></li>
-		</ul>
-	</div>
-</div>
-<div class="main">          
-<div class="content">
-<div style="">
-<div><h2>{$tip}：</h2></div><br />    
-{__CONTENT__}
-</div>
-</div>
-</div>
-<div class="footer">Powered By ChinaWit  © 2016-2016  京ICP备00000000号</div>
-</div>
 </body>
 </html>

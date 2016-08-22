@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none; background:none;}
+textarea{resize:none;}
+a{text-decoration:none; color:#656565;}
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+/*头*/
+.header{
+	/* font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei'; */
+	font-family: 微软雅黑, tahoma, arial;
+	height:60px;
+	color:#fff;
+	background-color:#2A5ABE;
+}
+.headerleft{
+	line-height: 60px;
+	display:inline-block;
+	padding-left:55px;
+	font-size: 25px;
+}
+.headerright{
+	font-family: 微软雅黑, tahoma, arial;
+	font-size: 16px;
+	float:right;
+	padding-right:25px;
+	padding-left:25px;
+	line-height: 60px;
+	height:60px;
+}
+/*退出*/
+.headerright span{
+	display: inline-block;
+    margin: 15px 3px;
+    width: 32px;
+    height: 32px;
+    background: url('/DriverSchool/Application/Public/js/Layout/img/King.png') no-repeat;
+}
+.headerright:hover{
+    background:#3A5FCD;
+	cursor: pointer;
+}
+.background{
+	background: url('/DriverSchool/Application/Public/js/Layout/img/main.jpg') no-repeat;
+	width:100%;
+	position: absolute;
+	background-color:#E8F1F4;
+}
+.main{
+	background:#fff;
+	position: absolute;
+    left:300px;
+    top: 0;
+    width: 100%; 
+}
+.content{
+	padding:30px;
+}
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+	text-align: center;
+	line-height: 35px;
+	height:35px;
+	background:#CDC9A5;
+}
+.nav{
+    font-family: 微软雅黑, tahoma, arial;
+    position: absolute;
+    margin-top: -14px;
+}
+.nav ul{
+    font-family: 微软雅黑, tahoma, arial;
+    text-align: center;
+    font-size: 13px;
+}
+.nav ul li{
+    font-family: 微软雅黑, tahoma, arial;
+    margin-bottom: 10px;
+}
+.nav ul li:hover{
+    background: #268DE1;
+    font-size: 18px;
+    /* color: #fff; */
+}
+.nav ul li a:hover{
+    /* color: inherit; */
+    color: #fff;
+}
+.nav ul li a:active{
+    /* color: inherit; */
+    color: #666;
+}
+.login-header{
+                    width:500px;
+                    height:30px;
+                    font-family: 微软雅黑, tahoma, arial;
+                    color:#fff;
+                    background-color:#268DE1;
+                    text-align:center;
+                    padding-top:4px;
+                    margin:100px auto 0px auto;
+                    font-size: 18px;
+}
+.login-main{
+                    width:500px;
+                    background-color:#fff;  
+                    margin:0px auto 100px auto;
+}
+.login-main-inline{
+                    padding:30px;
+}
