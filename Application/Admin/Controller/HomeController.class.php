@@ -17,7 +17,7 @@ class HomeController extends Controller {
         }
         //TODO
         //数据库验证
-        if(true){
+        if(I('post.UserName')){//不为空就可以了
             session('UserName',I('post.UserName'));
             echo '{"result":"1"}';
         }else{
