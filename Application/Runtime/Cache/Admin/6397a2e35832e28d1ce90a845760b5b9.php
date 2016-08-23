@@ -54,7 +54,8 @@
                         if (res.result === "1") {
                             location.href = "/LG_ThinkPHP/Admin/UserManage/AddUser";
                         } else {
-                            layer.msg("验证码错误！", {          
+                            if (res.result === "2") {
+                            layer.msg("用户名好歹随便打点啊", {          
                                 icon: 2,
                                 time: 1000 //1秒关闭
                             });
@@ -62,7 +63,18 @@
                             $("#Password").textbox('setValue','');
                             $("#verify_code").textbox('setValue','');
                             document.getElementById("img").setAttribute("src", "/LG_ThinkPHP/Admin/Home/Verify");
-                        }
+                        } 
+                        if (res.result === "0") {
+                            layer.msg("验证码好歹得对啊", {          
+                                icon: 2,
+                                time: 1000 //1秒关闭
+                            });
+                            $("#Username").textbox('setValue','');
+                            $("#Password").textbox('setValue','');
+                            $("#verify_code").textbox('setValue','');
+                            document.getElementById("img").setAttribute("src", "/LG_ThinkPHP/Admin/Home/Verify");
+                        } 
+                    }
                     }});
             }
             function updateImg(){
