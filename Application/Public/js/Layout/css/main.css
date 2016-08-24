@@ -45,7 +45,7 @@ a{text-decoration:none; color:#656565;}
 }
 .headerright:hover{
     background:#3A5FCD;
-	cursor: pointer;
+    cursor: pointer;
 }
 .background{
 	background: url('/DriverSchool/Application/Public/js/Layout/img/main.jpg') no-repeat;
@@ -68,10 +68,10 @@ a{text-decoration:none; color:#656565;}
     width: 100%;
     bottom: 0;
     clear: both;
-	text-align: center;
-	line-height: 35px;
-	height:35px;
-	background:#CDC9A5;
+    text-align: center;
+    line-height: 35px;
+    height:35px;
+    background:#CDC9A5;
 }
 .nav{
     font-family: 微软雅黑, tahoma, arial;
@@ -101,21 +101,22 @@ a{text-decoration:none; color:#656565;}
     color: #666;
 }
 .login-header{
-                    width:500px;
-                    height:30px;
-                    font-family: 微软雅黑, tahoma, arial;
-                    color:#fff;
-                    background-color:#268DE1;
-                    text-align:center;
-                    padding-top:4px;
-                    margin:100px auto 0px auto;
-                    font-size: 18px;
+    width:500px;
+    height:30px;
+    font-family: 微软雅黑, tahoma, arial;
+    color:#fff;
+    background-color:#268DE1;
+    text-align:center;
+    line-height: 30px;
+    margin:150px auto 0px auto;
+    font-size: 18px;
 }
 .login-main{
-                    width:500px;
-                    background-color:#fff;  
-                    margin:0px auto 100px auto;
+    width:500px;
+    background-color:#fff;  
+    margin:0px auto;
 }
 .login-main-inline{
-                    padding:30px;
+    padding:30px;
+    margin: 0 auto;
 }

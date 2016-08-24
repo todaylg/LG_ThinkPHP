@@ -20,24 +20,22 @@
             <div class="login-main-inline">  
              <form id="fm" method="post">
               <table cellpadding="5">
-               <tr>
-                <td>用户名：</td>
-                <td><input class="easyui-textbox" type="text" id="UserName" name="UserName" /></td>
-            </tr>
-            <tr>
-                <td>密码：</td>
-                <td><input class="easyui-textbox" type="password" id="Password" name="Password" /></td>
-            </tr>
-            <tr>
-                <td>验证码：</td>
-                <td><input class="easyui-textbox" type="text"  id="verify_code" name="verify_code" /></td>
-                <td>
-                    <img src="/LG_ThinkPHP/Admin/Home/Verify" id="img" title="看不清，点击图片进行更换" style="width:120px;height:30px;" onclick="updateImg()">
-                </td>	
-            </tr>
+               <div style="margin:0 100px;">
+                <span>用户名：</span>
+                <input class="easyui-textbox" type="text" id="UserName" name="UserName" /> 
+            </div>
+            <div style="margin:12px 100px 0 100px;">
+                <span style="margin-right:12px;">密码：</span>
+                <input class="easyui-textbox" type="password" id="Password" name="Password" />
+            </div>
+            <div style="margin:12px 100px 0 100px;position:relative;">
+                <span>验证码：</span>
+                <input class="easyui-textbox" type="text"  id="verify_code" name="verify_code" />
+                <img src="/LG_ThinkPHP/Admin/Home/Verify" id="img" title="看不清，点击图片进行更换" style="width:120px;height:30px;position:absolute;top:-4px;" onclick="updateImg()">
+            </div>
         </table>
     </form>
-    <div style="text-align:center;padding:5px"><!--text-align-->
+    <div style="text-align:center;padding:5px;margin-top:15px;"><!--text-align-->
       <a href="javascript:void(0)" class="easyui-linkbutton" id="go" style="width:100px;" onclick="Login()">登录</a>
   </div>
 </div>
