@@ -6,7 +6,7 @@
 
 截图：
 
-![image](https://github.com/todaylg/LG_ThinkPHP/blob/master/introduce_image/Login.png)
+![image](https://github.com/todaylg/LG_ThinkPHP/blob/master/introduce_image/LoginPage.png)
 
 ![image](https://github.com/todaylg/LG_ThinkPHP/blob/master/introduce_image/content.png)
 
